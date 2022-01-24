@@ -1,0 +1,6 @@
+include/*
+!include/TUD_HiWi_hours_doc_template.pdf
+!include/doc_data.py
+!include/gui.py
+!include/main_window.ui
+.idea
