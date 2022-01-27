@@ -8,7 +8,7 @@ Click the Dropdown Menu called *Clone* and select *Download ZIP* in this menu. T
 
 Alternatively you can *clone* this repository. For that, you'll have to install [Git Large File Storage Extension](https://git-lfs.github.com/). Don't worry, it's not that complicated. This way, the executable file is downloaded properly during the cloning process. 
 
-Or just compile it yourself, if you know how to handle python compilers. The necessary source code is provided within this repository. You would have to point the compiler to the main file called [gui.py](./indlude/gui.py).
+Or just compile it yourself, if you know how to handle python compilers. The necessary source code is provided within this repository. You would have to point the compiler to the main file called [gui.py](include/gui.py).
 
 
 ### Running the Application
