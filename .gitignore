@@ -4,3 +4,4 @@ include/*
 !include/gui.py
 !include/main_window.ui
 .idea
+venv
