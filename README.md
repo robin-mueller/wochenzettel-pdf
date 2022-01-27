@@ -4,13 +4,19 @@ Useful helper windows application for HiWis at TU Darmstadt to create the weekly
 ## Getting Started
 
 ### Download
-Click the Dropdown Menu called *Clone* and select *Download ZIP* in this menu. The executable file is called `doc_generator.exe`. To start it, just double click as you do with other windows applications.
+Click the Dropdown Menu called *Clone* and select *Download ZIP* in this menu. The executable file is called `doc_generator.exe`. It won't be properly downloaded when clicking *Download ZIP* because it is too large. You have to click on this file and then download it seperately (But make sure to place it exactly where it should be located inside this directory afterwards). 
+
+Alternatively you can *clone* this repository. For that, you'll have to install [Git Large File Storage Extension](https://git-lfs.github.com/). Don't worry, it's not that complicated. This way, the executable file is downloaded properly during the cloning process. 
+
+Or just compile it yourself, if you know how to handle python compilers. The necessary source code is provided within this repository. You would have to point the compiler to the main file called [gui.py](./indlude/gui.py).
+
+
+### Running the Application
+To start the executable, just double click as you do with other windows applications.
 
 *Hint:* This will open a terminal window first and after a little while you'll see the GUI shown below. **Don't close the terminal window**, because it will also close the application window.
 
-If you decide to clone and not just download this repo you'll have to install [Git Large File Storage Extension](https://git-lfs.github.com/). Don't worry, it's not that complicated.
-
-### Tool Handling
+### How to use it?
 It is quite simple to handle the program. Just type in your personal information, the date range in between you want to generate your documentations and a weekly pattern of start and end times (Format must be HH:MM) that will be followed by the application to fill the table entries for each pdf file. The table I refer to is the one that contains the actual information about when your working time started and ended on a certain day in a week.
 
 ![image](https://user-images.githubusercontent.com/83639955/150775652-288af662-6a30-4d4f-98a2-fc54f12950b8.png)
