@@ -4,15 +4,12 @@ Useful helper windows application for HiWis at TU Darmstadt to create the weekly
 ## Getting Started
 
 ### Download
-Click the Dropdown Menu called *Clone* and select *Download ZIP* in this menu. The executable file is called `doc_generator.exe`. It won't be properly downloaded when clicking *Download ZIP* because it is too large. You have to click on this file and then download it seperately (But make sure to place it exactly where it should be located inside this directory afterwards). 
+Click the Dropdown Menu called *Clone* and select *Download ZIP* in this menu.
 
-Alternatively you can *clone* this repository. For that, you'll have to install [Git Large File Storage Extension](https://git-lfs.github.com/). Don't worry, it's not that complicated. This way, the executable file is downloaded properly during the cloning process. 
-
-Or just compile it yourself, if you know how to handle python compilers. The necessary source code is provided within this repository. You would have to point the compiler to the main file called [gui.py](include/gui.py).
-
+Alternatively you can *clone* this repository using your local git installation. 
 
 ### Running the Application
-To start the executable, just double click as you do with other windows applications.
+The executable file is called `doc_generator.exe`. To start it, just double click as you do with other windows applications.
 
 *Hint:* This will open a terminal window first and after a little while you'll see the GUI shown below. **Don't close the terminal window**, because it will also close the application window.
 
