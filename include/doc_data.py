@@ -128,15 +128,14 @@ class DocData:
                 key = annotation['/T'][1:-1]
                 if 'Leer' not in key:
                     try:
-                        annotation.update(
-                            PdfDict(V=data[key])
-                        )
+                        annotation.update(PdfDict(V=data[key], AP=data[key]))
                     except KeyError as key_error:
                         # Don't raise an error if the key of rows does not exist, because they should be left empty
                         if 'Row' not in key:
                             raise key_error
-                    else:
-                        annotation.update(PdfDict(AP=''))
+        
+        # Render forms to show up when the file is opened
+        pdf_template.Root.AcroForm.update(PdfDict(NeedAppearances=PdfObject('true')))
     
     def write_files(self):
         doc_weeks_start = [self.doc_from] + [self.doc_from.add(weeks=num).start_of('week') for num in range(1, (self.doc_until - self.doc_from).in_weeks() + 1)]
@@ -180,8 +179,8 @@ class DocData:
             self._fill_pdf_forms(pdf_template, data)
             
             # Save to file
-            pdf_template.Root.AcroForm.update(PdfDict(NeedAppearances=PdfObject("true")))
-            PdfWriter().write(self.output_dir / f"{self.file_prefix}_Week{week_start_day.week_of_year}_{week_start_day.format('YYYY')}.pdf", pdf_template)
+            file_name = self.output_dir / f"{self.file_prefix}_Week{week_start_day.week_of_year}_{week_start_day.format('YYYY')}.pdf"
+            PdfWriter().write(file_name, pdf_template)
 
 
 # Debugging
