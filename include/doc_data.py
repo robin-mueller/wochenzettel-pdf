@@ -156,7 +156,7 @@ class DocData:
                 'Institut': self.institute,
                 'Name, Vorname': f"{self.surname}, {self.forename}",
                 'Geburtsdatum': self.birthdate.format(DATE_FORMAT),
-                'Bearbeitungsdatum': pendulum.today().format(DATE_FORMAT),
+                'Bearbeitungsdatum': week_start_day.end_of('week').subtract(days=2).format(DATE_FORMAT),
                 'vom': week_start_day.format(DATE_FORMAT),
                 'bis': week_start_day.end_of('week').subtract(days=2).format(DATE_FORMAT),
             }
